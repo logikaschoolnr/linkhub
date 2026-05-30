@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Профіль</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #494949;
+    }
+
+    .profile-card {
+      width: 320px;
+      height: 320px;
+      background: #6e2a2a;
+      border: 3px solid #e70000;
+      border-radius: 20px;
+      padding: 25px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .letter {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      background: #571414;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 55px;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #530000;
+      font-size: 14px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background: #7c0000;
+      color: rgb(0, 0, 0);
+      padding: 10px;
+      border-radius: 10px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .buttons a:hover {
+      background: #ffffff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+
+    <div>
+      <div class="letter">В</div>
+
+      <h2>Вікторія</h2>
+      <p>Frontend</p>
+    </div>
+
+    <div class="buttons">
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      <a href="https://t.me/" target="_blank">Telegram</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
